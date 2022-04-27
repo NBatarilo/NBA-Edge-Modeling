@@ -1,5 +1,4 @@
-
-curl 'https://stats.nba.com/stats/teamgamelogs?DateFrom=&DateTo=&GameSegment=&LastNGames=0&LeagueID=00&Location=&MeasureType=Advanced&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=Totals&Period=0&PlusMinus=N&Rank=N&Season=2021-22&SeasonSegment=&SeasonType=Regular+Season&ShotClockRange=&VsConference=&VsDivision=' \
+curl 'https://stats.nba.com/stats/teamgamelogs?DateFrom=&DateTo=&GameSegment=&LastNGames=0&LeagueID=00&Location=&MeasureType=Advanced&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=Totals&Period=0&PlusMinus=N&Rank=N&Season=2020-21&SeasonSegment=&SeasonType=Playoffs&ShotClockRange=&VsConference=&VsDivision=' \
   -H 'Accept: application/json, text/plain, */*' \
   -H 'Accept-Language: en-US,en;q=0.9' \
   -H 'Connection: keep-alive' \
@@ -14,29 +13,9 @@ curl 'https://stats.nba.com/stats/teamgamelogs?DateFrom=&DateTo=&GameSegment=&La
   -H 'sec-ch-ua-platform: "Windows"' \
   -H 'x-nba-stats-origin: stats' \
   -H 'x-nba-stats-token: true' \
-  --compressed > 2021.json
-
-
-curl 'https://stats.nba.com/stats/teamgamelogs?DateFrom=&DateTo=&GameSegment=&LastNGames=0&LeagueID=00&Location=&MeasureType=Advanced&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=Totals&Period=0&PlusMinus=N&Rank=N&Season=2020-21&SeasonSegment=&SeasonType=Regular+Season&ShotClockRange=&VsConference=&VsDivision=' \
-  -H 'Accept: application/json, text/plain, */*' \
-  -H 'Accept-Language: en-US,en;q=0.9' \
-  -H 'Connection: keep-alive' \
-  -H 'If-Modified-Since: Sun, 10 Apr 2022 21:59:37 GMT' \
-  -H 'Origin: https://www.nba.com' \
-  -H 'Referer: https://www.nba.com/' \
-  -H 'Sec-Fetch-Dest: empty' \
-  -H 'Sec-Fetch-Mode: cors' \
-  -H 'Sec-Fetch-Site: same-site' \
-  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36' \
-  -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="100", "Google Chrome";v="100"' \
-  -H 'sec-ch-ua-mobile: ?0' \
-  -H 'sec-ch-ua-platform: "Windows"' \
-  -H 'x-nba-stats-origin: stats' \
-  -H 'x-nba-stats-token: true' \
-  --compressed > 2020.json
-
-
-curl 'https://stats.nba.com/stats/teamgamelogs?DateFrom=&DateTo=&GameSegment=&LastNGames=0&LeagueID=00&Location=&MeasureType=Advanced&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=Totals&Period=0&PlusMinus=N&Rank=N&Season=2019-20&SeasonSegment=&SeasonType=Regular+Season&ShotClockRange=&VsConference=&VsDivision=' \
+  --compressed > 2020_p.json
+  
+curl 'https://stats.nba.com/stats/teamgamelogs?DateFrom=&DateTo=&GameSegment=&LastNGames=0&LeagueID=00&Location=&MeasureType=Advanced&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=Totals&Period=0&PlusMinus=N&Rank=N&Season=2019-20&SeasonSegment=&SeasonType=Playoffs&ShotClockRange=&VsConference=&VsDivision=' \
   -H 'Accept: application/json, text/plain, */*' \
   -H 'Accept-Language: en-US,en;q=0.9' \
   -H 'Connection: keep-alive' \
@@ -51,24 +30,9 @@ curl 'https://stats.nba.com/stats/teamgamelogs?DateFrom=&DateTo=&GameSegment=&La
   -H 'sec-ch-ua-platform: "Windows"' \
   -H 'x-nba-stats-origin: stats' \
   -H 'x-nba-stats-token: true' \
-  --compressed > 2019.json
+  --compressed > 2019_p.json
 
-curl 'https://stats.nba.com/stats/teamgamelogs?DateFrom=&DateTo=&GameSegment=&LastNGames=0&LeagueID=00&Location=&MeasureType=Advanced&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=Totals&Period=0&PlusMinus=N&Rank=N&Season=2018-19&SeasonSegment=&SeasonType=Regular+Season&ShotClockRange=&VsConference=&VsDivision=' \
-  -X 'OPTIONS' \
-  -H 'Accept: */*' \
-  -H 'Accept-Language: en-US,en;q=0.9' \
-  -H 'Access-Control-Request-Headers: x-nba-stats-origin,x-nba-stats-token' \
-  -H 'Access-Control-Request-Method: GET' \
-  -H 'Connection: keep-alive' \
-  -H 'Origin: https://www.nba.com' \
-  -H 'Referer: https://www.nba.com/' \
-  -H 'Sec-Fetch-Dest: empty' \
-  -H 'Sec-Fetch-Mode: cors' \
-  -H 'Sec-Fetch-Site: same-site' \
-  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36' \
-  --compressed > 2018.json
-
-curl 'https://stats.nba.com/stats/teamgamelogs?DateFrom=&DateTo=&GameSegment=&LastNGames=0&LeagueID=00&Location=&MeasureType=Advanced&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=Totals&Period=0&PlusMinus=N&Rank=N&Season=2017-18&SeasonSegment=&SeasonType=Regular+Season&ShotClockRange=&VsConference=&VsDivision=' \
+curl 'https://stats.nba.com/stats/teamgamelogs?DateFrom=&DateTo=&GameSegment=&LastNGames=0&LeagueID=00&Location=&MeasureType=Advanced&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=Totals&Period=0&PlusMinus=N&Rank=N&Season=2018-19&SeasonSegment=&SeasonType=Playoffs&ShotClockRange=&VsConference=&VsDivision=' \
   -H 'Accept: application/json, text/plain, */*' \
   -H 'Accept-Language: en-US,en;q=0.9' \
   -H 'Connection: keep-alive' \
@@ -83,9 +47,10 @@ curl 'https://stats.nba.com/stats/teamgamelogs?DateFrom=&DateTo=&GameSegment=&La
   -H 'sec-ch-ua-platform: "Windows"' \
   -H 'x-nba-stats-origin: stats' \
   -H 'x-nba-stats-token: true' \
-  --compressed > 2017.json
-
-curl 'https://stats.nba.com/stats/teamgamelogs?DateFrom=&DateTo=&GameSegment=&LastNGames=0&LeagueID=00&Location=&MeasureType=Advanced&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=Totals&Period=0&PlusMinus=N&Rank=N&Season=2016-17&SeasonSegment=&SeasonType=Regular+Season&ShotClockRange=&VsConference=&VsDivision=' \
+  --compressed > 2018_p.json  
+  
+  
+curl 'https://stats.nba.com/stats/teamgamelogs?DateFrom=&DateTo=&GameSegment=&LastNGames=0&LeagueID=00&Location=&MeasureType=Advanced&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=Totals&Period=0&PlusMinus=N&Rank=N&Season=2017-18&SeasonSegment=&SeasonType=Playoffs&ShotClockRange=&VsConference=&VsDivision=' \
   -H 'Accept: application/json, text/plain, */*' \
   -H 'Accept-Language: en-US,en;q=0.9' \
   -H 'Connection: keep-alive' \
@@ -100,10 +65,10 @@ curl 'https://stats.nba.com/stats/teamgamelogs?DateFrom=&DateTo=&GameSegment=&La
   -H 'sec-ch-ua-platform: "Windows"' \
   -H 'x-nba-stats-origin: stats' \
   -H 'x-nba-stats-token: true' \
-  --compressed > 2016.json
-
-
-curl 'https://stats.nba.com/stats/teamgamelogs?DateFrom=&DateTo=&GameSegment=&LastNGames=0&LeagueID=00&Location=&MeasureType=Advanced&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=Totals&Period=0&PlusMinus=N&Rank=N&Season=2015-16&SeasonSegment=&SeasonType=Regular+Season&ShotClockRange=&VsConference=&VsDivision=' \
+  --compressed > 2017_p.json
+  
+  
+curl 'https://stats.nba.com/stats/teamgamelogs?DateFrom=&DateTo=&GameSegment=&LastNGames=0&LeagueID=00&Location=&MeasureType=Advanced&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=Totals&Period=0&PlusMinus=N&Rank=N&Season=2016-17&SeasonSegment=&SeasonType=Playoffs&ShotClockRange=&VsConference=&VsDivision=' \
   -H 'Accept: application/json, text/plain, */*' \
   -H 'Accept-Language: en-US,en;q=0.9' \
   -H 'Connection: keep-alive' \
@@ -118,11 +83,10 @@ curl 'https://stats.nba.com/stats/teamgamelogs?DateFrom=&DateTo=&GameSegment=&La
   -H 'sec-ch-ua-platform: "Windows"' \
   -H 'x-nba-stats-origin: stats' \
   -H 'x-nba-stats-token: true' \
-  --compressed > 2015.json
-
-
-
-curl 'https://stats.nba.com/stats/teamgamelogs?DateFrom=&DateTo=&GameSegment=&LastNGames=0&LeagueID=00&Location=&MeasureType=Advanced&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=Totals&Period=0&PlusMinus=N&Rank=N&Season=2014-15&SeasonSegment=&SeasonType=Regular+Season&ShotClockRange=&VsConference=&VsDivision=' \
+  --compressed > 2016_p.json
+  
+  
+curl 'https://stats.nba.com/stats/teamgamelogs?DateFrom=&DateTo=&GameSegment=&LastNGames=0&LeagueID=00&Location=&MeasureType=Advanced&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=Totals&Period=0&PlusMinus=N&Rank=N&Season=2015-16&SeasonSegment=&SeasonType=Playoffs&ShotClockRange=&VsConference=&VsDivision=' \
   -H 'Accept: application/json, text/plain, */*' \
   -H 'Accept-Language: en-US,en;q=0.9' \
   -H 'Connection: keep-alive' \
@@ -137,11 +101,9 @@ curl 'https://stats.nba.com/stats/teamgamelogs?DateFrom=&DateTo=&GameSegment=&La
   -H 'sec-ch-ua-platform: "Windows"' \
   -H 'x-nba-stats-origin: stats' \
   -H 'x-nba-stats-token: true' \
-  --compressed > 2014.json
-
-
-
-curl 'https://stats.nba.com/stats/teamgamelogs?DateFrom=&DateTo=&GameSegment=&LastNGames=0&LeagueID=00&Location=&MeasureType=Advanced&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=Totals&Period=0&PlusMinus=N&Rank=N&Season=2013-14&SeasonSegment=&SeasonType=Regular+Season&ShotClockRange=&VsConference=&VsDivision=' \
+  --compressed > 2015_p.json
+  
+curl 'https://stats.nba.com/stats/teamgamelogs?DateFrom=&DateTo=&GameSegment=&LastNGames=0&LeagueID=00&Location=&MeasureType=Advanced&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=Totals&Period=0&PlusMinus=N&Rank=N&Season=2014-15&SeasonSegment=&SeasonType=Playoffs&ShotClockRange=&VsConference=&VsDivision=' \
   -H 'Accept: application/json, text/plain, */*' \
   -H 'Accept-Language: en-US,en;q=0.9' \
   -H 'Connection: keep-alive' \
@@ -156,11 +118,10 @@ curl 'https://stats.nba.com/stats/teamgamelogs?DateFrom=&DateTo=&GameSegment=&La
   -H 'sec-ch-ua-platform: "Windows"' \
   -H 'x-nba-stats-origin: stats' \
   -H 'x-nba-stats-token: true' \
-  --compressed > 2013.json
-
-
-
-curl 'https://stats.nba.com/stats/teamgamelogs?DateFrom=&DateTo=&GameSegment=&LastNGames=0&LeagueID=00&Location=&MeasureType=Advanced&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=Totals&Period=0&PlusMinus=N&Rank=N&Season=2012-13&SeasonSegment=&SeasonType=Regular+Season&ShotClockRange=&VsConference=&VsDivision=' \
+  --compressed > 2014_p.json
+  
+  
+curl 'https://stats.nba.com/stats/teamgamelogs?DateFrom=&DateTo=&GameSegment=&LastNGames=0&LeagueID=00&Location=&MeasureType=Advanced&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=Totals&Period=0&PlusMinus=N&Rank=N&Season=2013-14&SeasonSegment=&SeasonType=Playoffs&ShotClockRange=&VsConference=&VsDivision=' \
   -H 'Accept: application/json, text/plain, */*' \
   -H 'Accept-Language: en-US,en;q=0.9' \
   -H 'Connection: keep-alive' \
@@ -175,9 +136,10 @@ curl 'https://stats.nba.com/stats/teamgamelogs?DateFrom=&DateTo=&GameSegment=&La
   -H 'sec-ch-ua-platform: "Windows"' \
   -H 'x-nba-stats-origin: stats' \
   -H 'x-nba-stats-token: true' \
-  --compressed > 2012.json\
+  --compressed > 2013_p.json
+  
 
-curl 'https://stats.nba.com/stats/teamgamelogs?DateFrom=&DateTo=&GameSegment=&LastNGames=0&LeagueID=00&Location=&MeasureType=Advanced&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=Totals&Period=0&PlusMinus=N&Rank=N&Season=2011-12&SeasonSegment=&SeasonType=Regular+Season&ShotClockRange=&VsConference=&VsDivision=' \
+curl 'https://stats.nba.com/stats/teamgamelogs?DateFrom=&DateTo=&GameSegment=&LastNGames=0&LeagueID=00&Location=&MeasureType=Advanced&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=Totals&Period=0&PlusMinus=N&Rank=N&Season=2012-13&SeasonSegment=&SeasonType=Playoffs&ShotClockRange=&VsConference=&VsDivision=' \
   -H 'Accept: application/json, text/plain, */*' \
   -H 'Accept-Language: en-US,en;q=0.9' \
   -H 'Connection: keep-alive' \
@@ -192,4 +154,22 @@ curl 'https://stats.nba.com/stats/teamgamelogs?DateFrom=&DateTo=&GameSegment=&La
   -H 'sec-ch-ua-platform: "Windows"' \
   -H 'x-nba-stats-origin: stats' \
   -H 'x-nba-stats-token: true' \
-  --compressed > 2011.json
+  --compressed > 2012_p.json
+  
+  
+curl 'https://stats.nba.com/stats/teamgamelogs?DateFrom=&DateTo=&GameSegment=&LastNGames=0&LeagueID=00&Location=&MeasureType=Advanced&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=Totals&Period=0&PlusMinus=N&Rank=N&Season=2011-12&SeasonSegment=&SeasonType=Playoffs&ShotClockRange=&VsConference=&VsDivision=' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Accept-Language: en-US,en;q=0.9' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: https://www.nba.com' \
+  -H 'Referer: https://www.nba.com/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36' \
+  -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="100", "Google Chrome";v="100"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'x-nba-stats-origin: stats' \
+  -H 'x-nba-stats-token: true' \
+  --compressed > 2011_p.json
